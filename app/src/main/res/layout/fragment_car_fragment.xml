@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="56dp"
+    android:id="@+id/car_frag"
+    android:background="#fff"
+    tools:context=".car_fragment">
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Car"
+        android:textSize="45sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carTitle"
+        android:id="@+id/driver"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:padding="15dp"
+        android:text="@string/driver"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carTitle"
+        android:layout_toEndOf="@+id/driver"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:ems="8"
+        android:hint="Driver's name"
+        android:inputType="textPersonName"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rego"
+        android:layout_below="@+id/driver"
+        android:layout_marginStart="10dp"
+        android:paddingLeft="15dp"
+        android:text="@string/rego"
+        android:textSize="20sp"/>
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_toEndOf="@+id/rego"
+        android:layout_marginStart="10dp"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:hint="XXX-YYY" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rego"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:paddingRight="22.5dp"
+        android:paddingLeft="22.5dp"
+        android:text="START TIME" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_toEndOf="@+id/button"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rego"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="93dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:text="first break" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/button1"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rego"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="143dp"
+        android:text="second break" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rego"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="193dp"
+        android:paddingRight="31.5dp"
+        android:paddingLeft="31.5dp"
+        android:text="end time" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_toEndOf="@+id/button3"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button5"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="SAVE LOG ENTRIES" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="SHOW LOG ENTRIES" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PREVIOUS" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="next" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="car" type="id"></item>
+    <item name="t10truck" type="id"></item>
+    <item name="t5truck" type="id"></item>
+</resources>

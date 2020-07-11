@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+        <!-- Customize your theme here. -->
+    <style name="CustomBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/colorPrimary</item>>
+    </style>
+
+    <!-- Menu Item theme-->
+    <style name="MenuBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/colorAccent</item>>
+    </style>
+</resources>
